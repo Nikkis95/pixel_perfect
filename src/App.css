@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: white;
+}
+
+.custom-project-link {
+  color: rgb(95, 94, 94);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.custom-project-link:hover {
+  text-decoration: underline;
+}
