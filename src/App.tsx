@@ -9,8 +9,9 @@ import itcm2 from './assets/itcm2.jpg';
 import itcm3 from './assets/itcm3.jpg';
 import itcm4 from './assets/itcm4.jpg';
 
+//struktur så att det är lätt att lägga till fler projekt 
 export default function App() {
-    const projects = [
+    const projects = [ 
         {
       title: "Gleerups portal",
       subtitle: "Educational platform",
@@ -42,17 +43,14 @@ export default function App() {
   ];
    return (
     <div className="min-h-screen bg-white pb-32">
-      <Header />
+      <Header /> {/*Header komponent som innehåller logotyp och navigation*/}
       <Info />
 
-      <section className="max-w-7xl mx-auto px-8">
-        {/* <h2 className="text-[22px] font-normal text-zinc-700 mb-10">
-          Some things that we are proud of
-        </h2> */}
+      <section className="max-w-7xl mx-auto px-8 mt-20">
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-12 ">
           {projects.map((project, index) => (
-            <Card
+            <Card               
               key={index}
               title={project.title}
               subtitle={project.subtitle}
